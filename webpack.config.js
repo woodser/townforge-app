@@ -69,6 +69,7 @@ module.exports = {
   },
   mode: 'development',
   devtool: 'source-map',
+  externals: ['worker_threads','ws','perf_hooks', 'child_process'], // exclude nodejs
   entry: resolveAppPath('src/main/index.js'),
   output: {
     filename: 'static/js/bundle.js',
